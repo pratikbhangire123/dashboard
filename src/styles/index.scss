@@ -116,14 +116,4 @@ $divider-color: rgba(#A5A5A5, 0.2);
   }
 }
 
-.custom-width {
-  width: 100%; 
-
-  @media (max-width: 768px) {
-    width: 50%; 
-    display: inline-block;
-  }
-}
-
-
 

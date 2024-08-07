@@ -1,6 +1,9 @@
-export default function MenuItem({ children }) {
+export default function MenuItem({ children, className, props }) {
   return (
-    <li className="nav-item px-2 py-1 rounded-circle bg-neutralLight">
+    <li
+      {...props}
+      className={`nav-item px-2 py-1 rounded-circle bg-neutralLight ${className}`}
+    >
       {children}
     </li>
   );

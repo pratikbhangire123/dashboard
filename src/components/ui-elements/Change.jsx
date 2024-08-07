@@ -1,8 +1,9 @@
 import formatChangeString from "../../utils/formatChangeString";
 
-export default function Change({ change }) {
+export default function Change({ change, props }) {
   return (
     <p
+      {...props}
       className={`mb-0 fw-bold ${change < 0 ? "text-danger" : "text-success"}`}
     >
       <i

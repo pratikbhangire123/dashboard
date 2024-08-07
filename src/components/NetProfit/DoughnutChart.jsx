@@ -30,11 +30,15 @@ export default function DoughnutChart() {
         },
       },
     },
-    cutout: "70%", // Adjust this value to make the donut thicker or thinner
+    cutout: "70%",
   };
 
   return (
-    <div className="w-50 h-75">
+    <div
+      role="img"
+      aria-label="net-profit-doughnut-chart"
+      className="w-50 h-75"
+    >
       <Doughnut data={data} options={options} />
     </div>
   );

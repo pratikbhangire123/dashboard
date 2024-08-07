@@ -3,7 +3,7 @@ import { customerFeedback as feedbacks } from "../../data.json";
 
 export default function CustomerFeedback() {
   return (
-    <CardContainer className="box">
+    <CardContainer aria-label="customer-feedback-card" className="box">
       <H3>Customer&apos;s Feedback</H3>
       {feedbacks.map((feedback) => (
         <Feedback

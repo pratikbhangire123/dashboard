@@ -3,11 +3,17 @@ import { netProfit } from "../../data.json";
 
 export default function NetProfit() {
   return (
-    <CardContainer className="card-body d-flex align-items-center justify-content-between">
+    <CardContainer
+      role="region"
+      aria-labelledby="net-profit-card"
+      className="card-body d-flex align-items-center justify-content-between"
+    >
       <div>
-        <H5>Net Profit</H5>
+        <H5 aria-label="net-profit-title">Net Profit</H5>
 
-        <H3 className="my-2 fs-2 fw-bold">{netProfit.value}</H3>
+        <H3 aria-label="" className="my-2 fs-2 fw-bold">
+          {netProfit.value}
+        </H3>
 
         <Change change={netProfit.change} />
       </div>

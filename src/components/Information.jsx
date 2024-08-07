@@ -3,7 +3,7 @@ import { information as informationItems } from "../data.json";
 
 export default function Information() {
   return (
-    <CardContainer>
+    <CardContainer aria-label="information-card">
       {informationItems.map((item) => (
         <div
           key={item.name}

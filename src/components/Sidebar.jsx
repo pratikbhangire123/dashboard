@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/logo.svg";
+import Logo from "../../public/logo.svg";
 import { useSidebar } from "../context/SidebarContext";
 
 export default function Sidebar() {
@@ -35,17 +35,22 @@ export default function Sidebar() {
 
   return (
     <aside
-      id="sidebar"
+      role="navigation"
+      aria-label="Sidebar Navigation"
       className={`sidebar h-auto d-flex flex-column bg-primary ${
         isSidebarVisible ? "show" : ""
       }`}
     >
       <nav className="navbar d-flex flex-column flex-grow-1 gap-4">
         <div className="d-flex align-items-center justify-content-between">
-          <a href="/" className="navbar-brand ms-3">
+          <a href="/" className="navbar-brand ms-3" aria-label="Dashboard Home">
             <img src={Logo} alt="Logo of Dashboard" width={50} />
           </a>
-          <button onClick={hideSidebar} className="btn d-md-none">
+          <button
+            aria-label="Close sidebar"
+            onClick={hideSidebar}
+            className="btn d-md-none"
+          >
             <i className="bi-x-circle fs-5 text-neutralLight"></i>
           </button>
         </div>
@@ -56,9 +61,12 @@ export default function Sidebar() {
               key={item.name}
               onClick={() => handleSetActiveLink(item.name)}
               className="nav-item"
+              role="navlistitem"
             >
               <a
                 href="#"
+                aria-label={item.name}
+                aria-current={active === item.name ? "page" : undefined}
                 className={`nav-link text-center ${
                   active === item.name
                     ? "active underline text-tertiary"
@@ -71,7 +79,11 @@ export default function Sidebar() {
           ))}
 
           <li className="nav-item mt-auto">
-            <a href="#" className="nav-link text-center text-neutralLight">
+            <a
+              href="#"
+              aria-label="Logout"
+              className="nav-link text-center text-neutralLight"
+            >
               <i className="bi bi-box-arrow-right fs-3"></i>
             </a>
           </li>

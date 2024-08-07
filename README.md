@@ -1,8 +1,12 @@
-# React + Vite
+# Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based dashboard UI designed to showcase key metrics and data visualizations.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**: For building the user interface.
+- **Bootstrap**: For styling and layout.
+- **SaaS**: For styling.
+- **Chart.js**: For data visualization.
+- **Bootstrap Icons**: For iconography.
+- **Vite**: For development and build processes.

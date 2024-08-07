@@ -1,6 +1,6 @@
-export default function CardContainer({ children, className }) {
+export default function CardContainer({ children, props, className }) {
   return (
-    <section className="card h-100 bg-primary">
+    <section {...props} className="card h-100 bg-primary">
       <div className={`card-body ${className}`}>{children}</div>
     </section>
   );

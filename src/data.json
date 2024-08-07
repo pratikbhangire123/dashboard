@@ -28,35 +28,35 @@
 
   "orders": [
     {
-      "customerPhoto": "src/assets/customerOne.jpg",
+      "customerPhoto": "/customerOne.jpg",
       "customerName": "Wade Warren",
       "orderNo": "15478256",
       "amount": "$124.00",
       "status": "Delieverd"
     },
     {
-      "customerPhoto": "src/assets/customerTwo.jpg",
+      "customerPhoto": "/customerTwo.jpg",
       "customerName": "Jane Cooper",
       "orderNo": "48965746",
       "amount": "$365.02",
       "status": "Delieverd"
     },
     {
-      "customerPhoto": "src/assets/customerThree.jpg",
+      "customerPhoto": "/customerThree.jpg",
       "customerName": "Guy Hawkins",
       "orderNo": "78951289",
       "amount": "$45.88",
       "status": "Cancelled"
     },
     {
-      "customerPhoto": "src/assets/customerFour.jpg",
+      "customerPhoto": "/customerFour.jpg",
       "customerName": "Kristin Watson",
       "orderNo": "20965732",
       "amount": "$65.00",
       "status": "Delieverd"
     },
     {
-      "customerPhoto": "src/assets/customerFive.jpg",
+      "customerPhoto": "/customerFive.jpg",
       "customerName": "Cody Fisher",
       "orderNo": "95715620",
       "amount": "$545.00",
@@ -86,19 +86,19 @@
 
   "customerFeedback": [
     {
-      "customerPhoto": "src/assets/customerThree.jpg",
+      "customerPhoto": "/customerThree.jpg",
       "customerName": "Jenny Wilson",
       "rating": 4,
       "review": "Absolutely fantastic experience! The ambiance was perfect for a cozy dinner, and the service was top-notch. The chef’s special was out of this world. Highly recommend trying the truffle risotto—it’s a must-have!"
     },
     {
-      "customerPhoto": "src/assets/customerOne.jpg",
+      "customerPhoto": "/customerOne.jpg",
       "customerName": "Dianne Russell",
       "rating": 5,
       "review": "Great place for a casual meal. The burgers were juicy and flavorful, and the fries were crispy. Only reason I’m not giving 5 stars is because the wait time was a bit longer than expected. Still, worth the visit!"
     },
     {
-      "customerPhoto": "src/assets/customerTwo.jpg",
+      "customerPhoto": "/customerTwo.jpg",
       "customerName": "Devon Lane",
       "rating": 3.5,
       "review": "The food was decent, but I expected more based on the reviews. The pasta was underwhelming, and the service was slow. The atmosphere was nice, though, and the dessert was delightful. Maybe I’ll give it another try"

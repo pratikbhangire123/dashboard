@@ -82,7 +82,7 @@ export default function BarChart() {
   };
 
   return (
-    <div>
+    <div role="img" aria-label="activity-bar-chart">
       <Bar data={data} options={options} />
     </div>
   );

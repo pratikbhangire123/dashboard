@@ -2,7 +2,7 @@ import { BarChart, CardContainer, H3 } from "../index";
 
 export default function Activity() {
   return (
-    <CardContainer>
+    <CardContainer aria-label="activity-card">
       <div className="d-flex mb-1 align-items-center justify-content-between">
         <H3>Activity</H3>
 

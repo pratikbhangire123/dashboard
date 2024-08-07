@@ -3,7 +3,7 @@ import { CardContainer, H3 } from "./index";
 
 export default function RecentOrders() {
   return (
-    <CardContainer>
+    <CardContainer aria-label="recent-orders-card">
       <H3>Recent Orders</H3>
 
       <div className="table-responsive mt-3">
@@ -45,7 +45,7 @@ export default function RecentOrders() {
 
                 <td className="py-3">
                   <p
-                    className={`m-0 text-center fw-semibold rounded-5 ${
+                    className={`m-0 px-2 py-1 text-center fw-semibold rounded-5 ${
                       order.status === "Delieverd"
                         ? " text-success bg-success bg-opacity-25"
                         : "text-danger bg-danger bg-opacity-25"
