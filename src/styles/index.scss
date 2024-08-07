@@ -1,0 +1,129 @@
+// * {
+//   border: 1px solid red;
+// }
+
+:root {
+  --custom-primary-color: #37373F;   
+  --custom-secondary-color: #242529;
+  --custom-tertiary-color: #A6ABFF;
+  --custom-neutral-color: #FDFDFD;
+  --custom-neutralLight-color: #A5A5A5;
+}
+
+$divider-color: rgba(#A5A5A5, 0.2);
+
+.bg-primary {
+  background-color: var(--custom-primary-color) !important;
+}
+
+.text-primary {
+  color: var(--custom-primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--custom-secondary-color) !important;
+}
+
+.text-secondary {
+  color: var(--custom-secondary-color) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--custom-tertiary-color) !important;
+}
+
+.text-tertiary {
+  color: var(--custom-tertiary-color) !important;
+}
+
+.text-neutral {
+  color: var(--custom-neutral-color) !important;
+}
+
+.bg-neutralLight {
+  background-color: var(--custom-neutralLight-color) !important;
+}
+
+.text-neutralLight {
+  color: var(--custom-neutralLight-color) !important;
+}
+
+::placeholder {
+  color: var(--custom-neutralLight-color) !important;
+}
+
+.table {
+  th, td {
+    color: var(--custom-neutral-color);
+    background-color: var(--custom-primary-color) !important;
+    border-bottom-color: $divider-color;
+}
+}
+
+.underline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 90%;
+    width: 3px;
+    border-radius: 10px;
+    background-color: var(--custom-tertiary-color);
+  }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.table-no-divider-last {
+  tbody tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}
+
+.box {
+  height: 200px;
+  overflow: auto;
+}
+
+.sidebar {
+  display: none;
+
+  @media (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: fit-content;
+      height: 100%;
+      background-color: #f8f9fa;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+
+      &.show {
+        transform: translateX(0);
+      }
+    
+  }
+}
+
+.custom-width {
+  width: 100%; 
+
+  @media (max-width: 768px) {
+    width: 50%; 
+    display: inline-block;
+  }
+}
+
+
+
